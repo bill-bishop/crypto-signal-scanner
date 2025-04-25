@@ -46,7 +46,7 @@ project-root/
 
 1. Clone the repo:
    ```bash
-   git clone https://github.com/yourname/crypto-signal-scanner.git
+   git clone https://github.com/bill-bishop/crypto-signal-scanner.git
    cd crypto-signal-scanner
    ```
 

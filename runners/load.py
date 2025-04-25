@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from scipy.signal import find_peaks
 from datetime import timedelta
-import matplotlib.ticker as mtick
+import matplotlib.ticker as tickr
 import json
 
 N = 3  # Hours of data to display
@@ -124,7 +124,7 @@ while True:
 
     # === Plotting ===
     ax.clear()
-    ax.yaxis.set_major_formatter(mtick.PercentFormatter(xmax=1.0))
+    ax.yaxis.set_major_formatter(tickr.PercentFormatter(xmax=1.0))
 
     for coin, series in sliced_coins.items():
         if coin == 'bitcoin':
