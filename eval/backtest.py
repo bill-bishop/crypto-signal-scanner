@@ -34,7 +34,7 @@ def backtest_one(
         if future_time not in series.index:
             continue
 
-        predicted_change = -1 * predict_next(window, horizon=horizon, method=method)
+        predicted_change = predict_next(window, horizon=horizon, method=method)
         future_price = series[future_time]
         current_price = window.iloc[-1]
         actual_change = (future_price - current_price) / current_price
